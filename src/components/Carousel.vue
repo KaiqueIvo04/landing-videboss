@@ -1,5 +1,5 @@
 <template>
-  <div id="collection" class="carousel lg:w-3/4 h-200">
+  <div id="collection" class="carousel lg:w-3/4 h-100 shadow-2xl rounded-2xl">
     <div id="slide1" class="carousel-item relative w-full">
       <img src="../assets/foto1.jpeg" class="w-full rounded-2xl" />
       <div
