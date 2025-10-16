@@ -1,7 +1,7 @@
 <template>
-  <div class="carousel w-full h-170">
+  <div id="collection" class="carousel lg:w-3/4 h-200">
     <div id="slide1" class="carousel-item relative w-full">
-      <img src="../assets/foto1.jpeg" class="w-full" />
+      <img src="../assets/foto1.jpeg" class="w-full rounded-2xl" />
       <div
         class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
       >
@@ -10,7 +10,7 @@
       </div>
     </div>
     <div id="slide2" class="carousel-item relative w-full">
-      <img src="../assets/foto2.jpeg" class="w-full" />
+      <img src="../assets/foto2.jpeg" class="w-full rounded-2xl" />
       <div
         class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
       >
@@ -19,7 +19,7 @@
       </div>
     </div>
     <div id="slide3" class="carousel-item relative w-full">
-      <img src="../assets/foto3.jpeg" class="w-full" />
+      <img src="../assets/foto3.jpeg" class="w-full rounded-2xl" />
       <div
         class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
       >
@@ -28,7 +28,7 @@
       </div>
     </div>
     <div id="slide4" class="carousel-item relative w-full">
-      <img src="../assets/foto4.jpeg" class="w-full" />
+      <img src="../assets/foto4.jpeg" class="w-full rounded-2xl" />
       <div
         class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
       >

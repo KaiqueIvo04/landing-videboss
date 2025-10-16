@@ -1,6 +1,6 @@
 <template>
   <section
-    class="bg-gray-300/50 shadow-md flex justify-between items-center h-max p-2"
+    class="bg-pink-300 shadow-md flex justify-between items-center h-max p-2"
   >
     <div class="w-20"></div>
 
@@ -43,19 +43,21 @@
     </div>
   </section>
 
-  <HeroSection />
-
-  <section class="justify-items-center">
-    <div class="w-3/4">
-      <Carousel />
+  <section class="flex justify-center w-full">
+    <div class="lg:px-50 md:px-35 sm: px-10">
+      <HeroSection />
+      <div class="flex justify-center mb-5">
+        <Carousel />
+      </div>
     </div>
   </section>
-
+  <Footer />
   <NavBar />
 </template>
 
 <script setup>
 import Carousel from "./components/Carousel.vue";
+import Footer from "./components/Footer.vue";
 import HeroSection from "./components/HeroSection.vue";
 import NavBar from "./components/NavBar.vue";
 </script>

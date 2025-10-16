@@ -26,7 +26,7 @@
               <span class="material-symbols-outlined text-white text-3xl"
                 >phone</span
               >
-              <span class="text-xs text-white">Contatos</span>
+              <span class="text-xs text-white">Contato</span>
             </a>
           </li>
           <li>
