@@ -1,40 +1,59 @@
 <template>
-  <div id="collection" class="carousel lg:w-1/2 lg:h-150 h-100 shadow-2xl rounded-2xl">
-    <div id="slide1" class="carousel-item relative w-full">
-      <img src="../assets/foto1.jpeg" class="w-full rounded-2xl" />
-      <div
-        class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
-      >
-        <a href="#slide4" class="btn btn-circle">❮</a>
-        <a href="#slide2" class="btn btn-circle">❯</a>
-      </div>
+  <div class="relative overflow-hidden lg:w-1/2 rounded-2xl shadow-2xl">
+    <div
+      class="flex transition-transform duration-700 ease-in-out"
+      :style="{ transform: `translateX(-${currentIndex * 100}%)` }"
+    >
+      <img
+        v-for="(img, i) in images"
+        :key="i"
+        :src="img"
+        class="w-full flex-shrink-0 rounded-2xl"
+      />
     </div>
-    <div id="slide2" class="carousel-item relative w-full">
-      <img src="../assets/foto2.jpeg" class="w-full rounded-2xl" />
-      <div
-        class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
-      >
-        <a href="#slide1" class="btn btn-circle">❮</a>
-        <a href="#slide3" class="btn btn-circle">❯</a>
-      </div>
-    </div>
-    <div id="slide3" class="carousel-item relative w-full">
-      <img src="../assets/foto3.jpeg" class="w-full rounded-2xl" />
-      <div
-        class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
-      >
-        <a href="#slide2" class="btn btn-circle">❮</a>
-        <a href="#slide4" class="btn btn-circle">❯</a>
-      </div>
-    </div>
-    <div id="slide4" class="carousel-item relative w-full">
-      <img src="../assets/foto4.jpeg" class="w-full rounded-2xl" />
-      <div
-        class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
-      >
-        <a href="#slide3" class="btn btn-circle">❮</a>
-        <a href="#slide1" class="btn btn-circle">❯</a>
-      </div>
+
+    <div
+      class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+    >
+      <button class="btn btn-circle pass" @click="prevSlide">❮</button>
+      <button class="btn btn-circle pass" @click="nextSlide">❯</button>
     </div>
   </div>
 </template>
+
+<script setup>
+import { ref, onMounted, onBeforeUnmount } from "vue";
+
+// Importa imagens de forma compatível com Vite
+const images = [
+  new URL("../assets/foto1.jpeg", import.meta.url).href,
+  new URL("../assets/foto2.jpeg", import.meta.url).href,
+  new URL("../assets/foto3.jpeg", import.meta.url).href,
+  new URL("../assets/foto4.jpeg", import.meta.url).href,
+];
+
+const currentIndex = ref(0);
+let intervalId;
+
+function nextSlide() {
+  currentIndex.value = (currentIndex.value + 1) % images.length;
+}
+
+function prevSlide() {
+  currentIndex.value = (currentIndex.value - 1 + images.length) % images.length;
+}
+
+onMounted(() => {
+  intervalId = setInterval(nextSlide, 3000);
+});
+
+onBeforeUnmount(() => {
+  clearInterval(intervalId);
+});
+</script>
+
+<style>
+.pass {
+  display: none;
+}
+</style>

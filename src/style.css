@@ -23,6 +23,7 @@
 :root:has(input.theme-controller[value=dark]:checked),[data-theme="dark"] { /* mytheme is the name of the custom theme */
   color-scheme: light;
   --color-base-100: #6d2d51;
+  --color-base-200: #3f3e3e;
   --color-primary: #594d94;
   /* ...rest of CSS variables like above example */
 }
