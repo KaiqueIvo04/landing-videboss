@@ -11,7 +11,19 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-  background-color: #fdd9ee;
+:root:has(input.theme-controller[value=mytheme]:checked),[data-theme="mytheme"] { /* mytheme is the name of the custom theme */
+  color-scheme: light;
+  --color-base-100: #FDA5D5;
+  --color-base-200: #FDD9EE;
+  --color-base-300: #C23C8A;
+  --color-primary: #ffffff;
+  /* ...rest of CSS variables like above example */
+}
+
+:root:has(input.theme-controller[value=dark]:checked),[data-theme="dark"] { /* mytheme is the name of the custom theme */
+  color-scheme: light;
+  --color-base-100: #6d2d51;
+  --color-primary: #594d94;
+  /* ...rest of CSS variables like above example */
 }
 

@@ -34,7 +34,7 @@
       </p>
     </aside>
     <nav>
-      <div class="grid grid-flow-col gap-4">
+      <div class="grid grid-flow-col gap-4 mb-20">
         <a>
           <svg
             xmlns="http://www.w3.org/2000/svg"

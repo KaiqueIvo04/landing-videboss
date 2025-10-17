@@ -1,6 +1,6 @@
 <template>
   <section
-    class="bg-pink-300 shadow-md flex justify-between items-center h-max p-2"
+    class="bg-base-100 shadow-md flex justify-between items-center h-max p-2"
   >
     <div class="w-20"></div>
 
@@ -16,7 +16,7 @@
     <div class="flex items-center justify-center w-20">
       <label class="swap swap-rotate">
         <!-- this hidden checkbox controls the state -->
-        <input type="checkbox" class="theme-controller" value="synthwave" />
+        <input type="checkbox" class="theme-controller" value="dark" />
 
         <!-- sun icon -->
         <svg
@@ -48,15 +48,15 @@
       <HeroSection />
 
       <div class="divider mb-10"></div>
-
-      <div class="flex justify-center mb-10">
-        <Carousel />
-      </div>
-
-      <div class="divider mb-10"></div>
       
       <div class="flex justify-center mb-10">
         <Benefits />
+      </div>
+
+      <div class="divider mb-10"></div>
+
+      <div class="flex justify-center mb-10">
+        <Carousel />
       </div>
 
       <div class="divider mb-10"></div>

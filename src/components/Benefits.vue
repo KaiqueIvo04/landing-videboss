@@ -1,6 +1,6 @@
 <template>
   <div class="grid lg:grid-cols-4 grid-cols-1 gap-2 h-full lg:w-3/4">
-    <div class="card bg-base-100 shadow-sm">
+    <div class="card bg-primary shadow-sm">
       <figure>
         <img
           src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
@@ -16,7 +16,7 @@
       </div>
     </div>
 
-    <div class="card bg-base-100 shadow-sm">
+    <div class="card bg-primary shadow-sm">
       <figure>
         <img
           src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
@@ -32,7 +32,7 @@
       </div>
     </div>
 
-    <div class="card bg-base-100 shadow-sm">
+    <div class="card bg-primary shadow-sm">
       <figure>
         <img
           src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
@@ -51,7 +51,7 @@
       </div>
     </div>
 
-    <div class="card bg-base-100 shadow-sm">
+    <div class="card bg-primary shadow-sm">
       <figure>
         <img
           src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"

@@ -1,14 +1,14 @@
 <template>
   <div class="flex flex-col justify-center items-center text-center h-75 my-5">
-    <h1 class="text-3xl font-bold text-pink-700 mb-4">
+    <h1 class="text-3xl font-bold text-secondary mb-4">
       Nova coleção Vide Boss 👑
     </h1>
-    <p class="text-gray-600 mb-6">
+    <p class="text-dark mb-6">
       Peças com estampas exclusivas que combinam sofisticação e conforto. Realce
       sua beleza com produtos que foram feitas para você brilhar!
     </p>
     <button
-      class="btn btn-outline btn-secondary w-35"
+      class="btn btn btn-secondary w-35 h-13"
       onclick="window.location.href='#collection'"
     >
       Ver coleção
