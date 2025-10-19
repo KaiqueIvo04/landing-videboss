@@ -1,4 +1,5 @@
 <template>
+  <!-- HEADER BAR -->
   <section
     class="bg-base-100 shadow-md flex justify-between items-center h-max p-2"
   >
@@ -16,7 +17,13 @@
     <div class="flex items-center justify-center w-20">
       <label class="swap swap-rotate">
         <!-- this hidden checkbox controls the state -->
-        <input type="checkbox" class="theme-controller" value="dark" />
+        <input
+          ref="themeSet"
+          type="checkbox"
+          class="theme-controller"
+          value="dark"
+          @change="setDarkTheme"
+        />
 
         <!-- sun icon -->
         <svg
@@ -43,9 +50,14 @@
     </div>
   </section>
 
+  <!-- MAIN CONTENT -->
   <section class="flex justify-center w-full">
     <div class="lg:px-50 md:px-35 sm: px-10">
-      <HeroSection />
+      <div
+        class="flex flex-col justify-center items-center text-center h-max my-5"
+      >
+        <HeroSection />
+      </div>
 
       <div class="divider mb-10"></div>
 
@@ -58,19 +70,83 @@
       <div class="flex flex-col items-center justify-center mb-10">
         <Collection />
       </div>
+
+      <div class="divider mb-10"></div>
+
+      <div
+        class="flex flex-col justify-center items-center text-center h-max my-5"
+      >
+        <About />
+      </div>
+
+      <div class="divider mb-10"></div>
+
+      <div
+        class="flex flex-col justify-center items-center text-center h-max my-5 bg-gradient-to-br"
+      >
+        <Contact />
+      </div>
+
+      <div class="divider mb-10"></div>
     </div>
   </section>
+
+  <!-- FOOTER -->
   <Footer />
+
+  <!-- NAV BAR -->
   <NavBar />
 </template>
 
 <script setup>
+import { onMounted, ref } from "vue";
+import About from "./components/About.vue";
 import Benefits from "./components/Benefits.vue";
-import Carousel from "./components/Carousel.vue";
 import Collection from "./components/Collection.vue";
+import Contact from "./components/Contact.vue";
 import Footer from "./components/Footer.vue";
 import HeroSection from "./components/HeroSection.vue";
 import NavBar from "./components/NavBar.vue";
+
+const themeSet = ref(null);
+
+function setDarkTheme() {
+  const isDark = themeSet.value.checked;
+
+  if (isDark) {
+    document.documentElement.setAttribute("data-theme", "dark");
+    localStorage.setItem("theme", "dark");
+  } else {
+    document.documentElement.setAttribute("data-theme", "mytheme");
+    localStorage.setItem("theme", "mytheme");
+  }
+};
+
+onMounted(() => {
+  // Pega o tema salvo ou usa o padrão do sistema
+  const savedTheme = localStorage.getItem("theme");
+  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+  const isDark = savedTheme === "dark" || (!savedTheme && prefersDark);
+
+  // Aplica o tema
+  if (isDark) {
+    document.documentElement.setAttribute("data-theme", "dark");
+    if (themeSet.value) {
+      themeSet.value.checked = true;
+    }
+  } else {
+    document.documentElement.setAttribute("data-theme", "mytheme");
+    if (themeSet.value) {
+      themeSet.value.checked = false;
+    }
+  }
+
+  // Salva no localStorage se ainda não existe
+  if (!savedTheme) {
+    localStorage.setItem("theme", isDark ? "dark" : "mytheme");
+  }
+});
 </script>
 
 <style scoped></style>

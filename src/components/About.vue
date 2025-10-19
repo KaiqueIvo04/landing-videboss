@@ -1,0 +1,51 @@
+<template>
+  <h1 id="about" class="text-3xl text-shadow-md font-bold text-secondary mb-4">
+    Sobre Nós
+  </h1>
+
+  <div class="lg:w-3/4 mb-15">
+    <p class="text-shadow-md text-lg mb-4">
+      A Vide Boss é uma marca de moda feminina dedicada a oferecer blusinhas
+      exclusivas com design moderno e qualidade superior. Trabalhamos com
+      tecidos nobres e modelagens que valorizam todos os tipos de corpo.
+    </p>
+    <p class="text-shadow-md text-lg">
+      Cada blusinha é pensada para acompanhar você em todos os momentos: da
+      reunião importante ao café com as amigas. Porque ser boss é sobre
+      autenticidade, confiança e muito estilo! 💕
+    </p>
+  </div>
+
+  <!-- OTimeline -->
+  <div class="border-l-4 border-pink-300 pl-6 mb-15">
+    <h3 class="text-xl font-bold mb-4">Nossa Jornada</h3>
+    <div class="mb-4">
+      <p class="font-semibold text-info text-shadow-md">2023 - O Início</p>
+      <p class="">Nascemos com o sonho de transformar a moda feminina</p>
+    </div>
+    <div class="mb-4">
+      <p class="font-semibold text-info text-shadow-md">Hoje</p>
+      <p class="">Milhares de mulheres confiantes usando Vide Boss</p>
+    </div>
+  </div>
+
+  <!-- Statistics -->
+  <div class="grid grid-cols-4 gap-4 text-center">
+    <div>
+      <p class="lg:text-4xl text-2xl font-bold text-secondary">500+</p>
+      <p class="text-shadow-md">Clientes Felizes</p>
+    </div>
+    <div>
+      <p class="lg:text-4xl text-2xl font-bold text-secondary">50+</p>
+      <p class="text-shadow-md">Modelos Exclusivos</p>
+    </div>
+    <div>
+      <p class="lg:text-4xl text-2xl font-bold text-secondary">4.9⭐</p>
+      <p class="text-shadow-md">Avaliação Média</p>
+    </div>
+    <div>
+      <p class="lg:text-4xl text-2xl font-bold text-secondary">100%</p>
+      <p class="text-shadow-md">Amor e Dedicação</p>
+    </div>
+  </div>
+</template>

@@ -11,7 +11,7 @@
   <footer
     class="footer footer-horizontal footer-center bg-gray-600 text-primary-content p-10"
   >
-    <aside>
+    <aside class="mb-20">
       <!-- <svg
       width="50"
       height="50"
@@ -33,7 +33,7 @@
         reservados
       </p>
     </aside>
-    <nav>
+    <!-- <nav>
       <div class="grid grid-flow-col gap-4 mb-20">
         <a>
           <svg
@@ -75,6 +75,6 @@
           </svg>
         </a>
       </div>
-    </nav>
+    </nav> -->
   </footer>
 </template>

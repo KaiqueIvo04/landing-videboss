@@ -5,36 +5,32 @@
     >
       <div class="lg:w-3/5 w-full">
         <ul class="flex justify-around items-center">
+
           <li>
             <a href="#" class="flex flex-col items-center gap-1">
-              <span class="material-symbols-outlined text-3xl"
-                >home</span
-              >
+              <span class="material-symbols-outlined text-3xl">home</span>
               <span class="text-xs">Início</span>
             </a>
           </li>
+
           <li>
-            <a href="#" class="flex flex-col items-center gap-1">
-              <span class="material-symbols-outlined text-3xl"
-                >favorite</span
-              >
-              <span class="text-xs">Favoritos</span>
+            <a href="#collection" class="flex flex-col items-center gap-1">
+              <span class="material-symbols-outlined text-3xl">favorite</span>
+              <span class="text-xs">Catálogo</span>
             </a>
           </li>
+
           <li>
-            <a href="#" class="flex flex-col items-center gap-1">
-              <span class="material-symbols-outlined text-3xl"
-                >phone</span
-              >
-              <span class="text-xs">Contato</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="flex flex-col items-center gap-1">
-              <span class="material-symbols-outlined text-3xl"
-                >info</span
-              >
+            <a href="#about" class="flex flex-col items-center gap-1">
+              <span class="material-symbols-outlined text-3xl">info</span>
               <span class="text-xs">Sobre</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#contact" class="flex flex-col items-center gap-1">
+              <span class="material-symbols-outlined text-3xl">phone</span>
+              <span class="text-xs">Contato</span>
             </a>
           </li>
         </ul>
