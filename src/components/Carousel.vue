@@ -1,5 +1,5 @@
 <template>
-  <div class="relative overflow-hidden lg:w-1/2 rounded-2xl shadow-2xl">
+  <div class="relative overflow-hidden lg:w-100 rounded-2xl shadow-2xl">
     <div
       class="flex transition-transform duration-700 ease-in-out"
       :style="{ transform: `translateX(-${currentIndex * 100}%)` }"
@@ -15,8 +15,8 @@
     <div
       class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
     >
-      <button class="btn btn-circle pass" @click="prevSlide">❮</button>
-      <button class="btn btn-circle pass" @click="nextSlide">❯</button>
+      <button class="btn btn-circle" @click="prevSlide">❮</button>
+      <button class="btn btn-circle" @click="nextSlide">❯</button>
     </div>
   </div>
 </template>
@@ -53,7 +53,4 @@ onBeforeUnmount(() => {
 </script>
 
 <style>
-.pass {
-  display: none;
-}
 </style>

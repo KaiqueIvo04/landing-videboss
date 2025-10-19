@@ -1,5 +1,12 @@
+<script setup lang="ts">
+import Carousel from "./Carousel.vue";
+</script>
+
 <template>
-  <div class="flex flex-col justify-center items-center text-center h-75 my-5">
+  <div class="flex flex-col justify-center items-center text-center h-max my-5">
+    <div class="flex justify-center mb-10">
+      <Carousel />
+    </div>
     <h1 class="text-3xl font-bold text-secondary mb-4">
       Nova coleção Vide Boss 👑
     </h1>

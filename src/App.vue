@@ -48,18 +48,16 @@
       <HeroSection />
 
       <div class="divider mb-10"></div>
-      
-      <div class="flex justify-center mb-10">
+
+      <div class="flex h-max justify-center mb-10">
         <Benefits />
       </div>
 
       <div class="divider mb-10"></div>
 
-      <div class="flex justify-center mb-10">
-        <Carousel />
+      <div class="flex flex-col items-center justify-center mb-10">
+        <Collection />
       </div>
-
-      <div class="divider mb-10"></div>
     </div>
   </section>
   <Footer />
@@ -69,6 +67,7 @@
 <script setup>
 import Benefits from "./components/Benefits.vue";
 import Carousel from "./components/Carousel.vue";
+import Collection from "./components/Collection.vue";
 import Footer from "./components/Footer.vue";
 import HeroSection from "./components/HeroSection.vue";
 import NavBar from "./components/NavBar.vue";
