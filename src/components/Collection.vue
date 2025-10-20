@@ -2,17 +2,17 @@
   <!-- COLEÇÃO 1-->
   <div id="collection">
     <h2 class="text-3xl text-shadow-md font-bold text-secondary mb-4">
-      Coleção Lisas ❣️
+      Coleção Estampadas 💝
     </h2>
   </div>
-  <div class="grid lg:grid-cols-3 grid-cols-1 gap-4 h-full lg:w-3/4">
+  <div class="grid lg:grid-cols-3 grid-cols-1 gap-5 h-full w-5/6">
     <div
-      v-for="(item, i) in images_collection1"
+      v-for="(item, i) in images_collection2"
       :key="i"
       class="card bg-primary shadow-sm hover:shadow-xl transition-shadow"
     >
-      <figure>
-        <img :src="item.image" />
+      <figure class="h-125 overflow-hidden">
+        <img :src="item.image" class="w-full h-full object-cover"/>
       </figure>
 
       <div class="card-body">
@@ -27,17 +27,17 @@
   <!-- COLEÇÃO 2 -->
   <div class="mt-15">
     <h2 class="text-3xl text-shadow-md font-bold text-secondary mb-4">
-      Coleção Estampadas 💝
+      Coleção Lisas ❣️
     </h2>
   </div>
-  <div class="grid lg:grid-cols-3 grid-cols-1 gap-4 h-full lg:w-3/4">
+  <div class="grid lg:grid-cols-3 grid-cols-1 gap-5 h-full w-5/6">
     <div
-      v-for="(item, i) in images_collection2"
+      v-for="(item, i) in images_collection1"
       :key="i"
       class="card bg-primary shadow-sm hover:shadow-xl transition-shadow"
     >
-      <figure>
-        <img :src="item.image" />
+      <figure class="h-125 overflow-hidden">
+        <img :src="item.image" class="w-full h-full object-cover" />
       </figure>
 
       <div class="card-body">

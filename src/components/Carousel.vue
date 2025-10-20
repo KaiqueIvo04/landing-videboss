@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative overflow-hidden lg:size-110 size-90 rounded-2xl shadow-2xl bg-gray-200"
+    class="relative overflow-hidden lg:size-150 w-90 rounded-2xl shadow-2xl bg-gray-200"
   >
     <div
       class="flex h-full transition-transform duration-700 ease-in-out bg-blue-100"

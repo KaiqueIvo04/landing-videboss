@@ -31,7 +31,7 @@
         </h3>
         <p class="text-shadow-md mb-4">Atendimento rápido e personalizado</p>
         <a
-          href="https://wa.me/5581971182390"
+          href="https://wa.me/558171182390?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20seus%20produtos."
           target="_blank"
           class="btn btn-secondary btn-sm"
         >
@@ -77,7 +77,7 @@
           <a
             title="E-mail Vide Boss"
             target="_blank"
-            href="mailto:kelvin-ivo@hotmail.com"
+            href="mailto:videboss2020@gmail.com"
           >
             <img
               width="65"

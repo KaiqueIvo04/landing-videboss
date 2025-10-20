@@ -30,18 +30,10 @@
   </div>
 
   <!-- Statistics -->
-  <div class="grid grid-cols-4 gap-4 text-center">
+  <div class="grid grid-cols-2 gap-4 text-center">
     <div>
       <p class="lg:text-4xl text-2xl font-bold text-secondary">500+</p>
       <p class="text-shadow-md">Clientes Felizes</p>
-    </div>
-    <div>
-      <p class="lg:text-4xl text-2xl font-bold text-secondary">50+</p>
-      <p class="text-shadow-md">Modelos Exclusivos</p>
-    </div>
-    <div>
-      <p class="lg:text-4xl text-2xl font-bold text-secondary">4.9⭐</p>
-      <p class="text-shadow-md">Avaliação Média</p>
     </div>
     <div>
       <p class="lg:text-4xl text-2xl font-bold text-secondary">100%</p>
