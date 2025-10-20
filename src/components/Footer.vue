@@ -14,7 +14,7 @@
       </p>
     </aside>
 
-    <a href="https://github.com/KaiqueIvo04" target="_blank" class="absolute right-5 ">
+    <a href="https://github.com/KaiqueIvo04" target="_blank" class="absolute mt-5">
       <p class="font-serif text-xs">Created and designed by Kaique Ivo</p>
     </a>
   </footer>
