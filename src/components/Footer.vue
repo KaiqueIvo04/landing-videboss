@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="footer footer-horizontal footer-center bg-gray-600 text-primary-content p-10"
+    class="footer footer-horizontal footer-center bg-gray-600 text-primary-content p-7"
   >
     <aside class="mb-20">
       <p class="font-bold">
@@ -12,10 +12,10 @@
         Copyright © {{ new Date().getFullYear() }} - Todos os direitos
         reservados
       </p>
-    </aside>
 
-    <a href="https://github.com/KaiqueIvo04" target="_blank" class="absolute mt-5">
-      <p class="font-serif text-xs">Created and designed by Kaique Ivo</p>
-    </a>
+      <a href="https://github.com/KaiqueIvo04" target="_blank">
+        <p class="font-serif text-xs">Created and designed by Kaique Ivo</p>
+      </a>
+    </aside>
   </footer>
 </template>

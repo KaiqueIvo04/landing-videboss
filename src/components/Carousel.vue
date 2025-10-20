@@ -1,5 +1,7 @@
 <template>
-  <div class="relative overflow-hidden size-110 rounded-2xl shadow-2xl bg-gray-200">
+  <div
+    class="relative overflow-hidden lg:size-110 size-90 rounded-2xl shadow-2xl bg-gray-200"
+  >
     <div
       class="flex h-full transition-transform duration-700 ease-in-out bg-blue-100"
       :style="containerStyle"
@@ -39,15 +41,17 @@ const totalImages = computed(() => images.value.length);
 
 const containerStyle = computed(() => ({
   transform: `translateX(-${(currentIndex.value * 100) / totalImages.value}%)`,
-  width: `${totalImages.value * 100}%`
+  width: `${totalImages.value * 100}%`,
 }));
 
 const slideStyle = computed(() => ({
-  width: totalImages.value > 0 ? `${100 / totalImages.value}%` : '100%'
+  width: totalImages.value > 0 ? `${100 / totalImages.value}%` : "100%",
 }));
 
 async function loadImages() {
-  images.value = await util.loadImagesFromCSV(import.meta.env.VITE_URL_CARROSEL);
+  images.value = await util.loadImagesFromCSV(
+    import.meta.env.VITE_URL_CARROSEL
+  );
 }
 
 function nextSlide() {
@@ -57,7 +61,8 @@ function nextSlide() {
 
 function prevSlide() {
   if (totalImages.value === 0) return;
-  currentIndex.value = (currentIndex.value - 1 + totalImages.value) % totalImages.value;
+  currentIndex.value =
+    (currentIndex.value - 1 + totalImages.value) % totalImages.value;
 }
 
 onMounted(async () => {
