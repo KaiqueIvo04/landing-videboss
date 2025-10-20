@@ -52,7 +52,7 @@
 
   <!-- MAIN CONTENT -->
   <section class="flex justify-center w-full">
-    <div class="lg:px-50 md:px-35 sm: px-10">
+    <div class="lg:px-50 md:px-35 sm:px-10">
       <div
         class="flex flex-col justify-center items-center text-center h-max my-5"
       >
