@@ -7,7 +7,7 @@ import Carousel from "./Carousel.vue";
     <Carousel />
   </div>
   <h1 class="text-3xl text-shadow-md font-bold text-secondary mb-4">
-    Nova coleção Vide Boss 👑
+    Nova coleção Vide T-shirts 👑
   </h1>
   <p class="mb-6 text-shadow-md">
     Peças com estampas exclusivas que combinam sofisticação e conforto. Realce

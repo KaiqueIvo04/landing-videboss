@@ -4,7 +4,7 @@
   >
     <aside class="mb-20">
       <p class="font-bold">
-        Vide Boss
+        Vide T-shirts
         <br />
         Moda feminina com estilo e elegância
       </p>
@@ -15,7 +15,7 @@
     </aside>
 
     <a href="https://github.com/KaiqueIvo04" target="_blank" class="absolute right-5 ">
-      <p class="font-serif">Created by Kaique Ivo</p>
+      <p class="font-serif text-xs">Created and designed by Kaique Ivo</p>
     </a>
   </footer>
 </template>

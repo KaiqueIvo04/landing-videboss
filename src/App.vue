@@ -8,8 +8,8 @@
     <!-- Logo centralizada -->
     <div class="flex-1 flex justify-center">
       <a href="#">
-        <span class="sr-only">Vide Boss</span>
-        <img src="./assets/vide-logo.png" alt="Vide Boss" class="h-20 w-auto" />
+        <span class="sr-only">Vide T-shirts</span>
+        <img src="./assets/vide-logo.png" alt="Vide T-shirts" class="h-20 w-auto" />
       </a>
     </div>
 

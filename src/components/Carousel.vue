@@ -1,15 +1,21 @@
 <template>
-  <div class="relative overflow-hidden lg:w-100 rounded-2xl shadow-2xl">
+  <div class="relative overflow-hidden size-110 rounded-2xl shadow-2xl bg-gray-200">
     <div
-      class="flex transition-transform duration-700 ease-in-out"
-      :style="{ transform: `translateX(-${currentIndex * 100}%)` }"
+      class="flex h-full transition-transform duration-700 ease-in-out bg-blue-100"
+      :style="containerStyle"
     >
-      <img
+      <div
         v-for="(img, i) in images"
         :key="i"
-        :src="img"
-        class="w-full flex-shrink-0 rounded-2xl"
-      />
+        class="h-full flex-shrink-0 border-0"
+        :style="slideStyle"
+      >
+        <img
+          :src="img"
+          class="w-full h-full object-cover"
+          :alt="`Slide ${i + 1}`"
+        />
+      </div>
     </div>
 
     <div
@@ -22,35 +28,48 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from "vue";
+import { ref, computed, onMounted, onBeforeUnmount } from "vue";
+import { util } from "../script/util";
 
-// Importa imagens de forma compatível com Vite
-const images = [
-  "https://res.cloudinary.com/de9s60ule/image/upload/v1760924951/foto1_jooorb.jpg",
-  "https://res.cloudinary.com/de9s60ule/image/upload/v1760924951/foto2_l5m0pv.jpg",
-  "https://res.cloudinary.com/de9s60ule/image/upload/v1760924951/foto3_woqcek.jpg",
-  "https://res.cloudinary.com/de9s60ule/image/upload/v1760924951/foto4_khkoy2.jpg",
-];
-
+const images = ref([]);
 const currentIndex = ref(0);
 let intervalId;
 
+const totalImages = computed(() => images.value.length);
+
+const containerStyle = computed(() => ({
+  transform: `translateX(-${(currentIndex.value * 100) / totalImages.value}%)`,
+  width: `${totalImages.value * 100}%`
+}));
+
+const slideStyle = computed(() => ({
+  width: totalImages.value > 0 ? `${100 / totalImages.value}%` : '100%'
+}));
+
+async function loadImages() {
+  images.value = await util.loadImagesFromCSV(import.meta.env.VITE_URL_CARROSEL);
+}
+
 function nextSlide() {
-  currentIndex.value = (currentIndex.value + 1) % images.length;
+  if (totalImages.value === 0) return;
+  currentIndex.value = (currentIndex.value + 1) % totalImages.value;
 }
 
 function prevSlide() {
-  currentIndex.value = (currentIndex.value - 1 + images.length) % images.length;
+  if (totalImages.value === 0) return;
+  currentIndex.value = (currentIndex.value - 1 + totalImages.value) % totalImages.value;
 }
 
-onMounted(() => {
-  intervalId = setInterval(nextSlide, 3000);
+onMounted(async () => {
+  await loadImages();
+  if (totalImages.value > 0) {
+    intervalId = setInterval(nextSlide, 3000);
+  }
 });
 
 onBeforeUnmount(() => {
-  clearInterval(intervalId);
+  if (intervalId) {
+    clearInterval(intervalId);
+  }
 });
 </script>
-
-<style>
-</style>
