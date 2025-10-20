@@ -26,10 +26,10 @@ import { ref, onMounted, onBeforeUnmount } from "vue";
 
 // Importa imagens de forma compatível com Vite
 const images = [
-  new URL("../assets/foto1.jpeg", import.meta.url).href,
-  new URL("../assets/foto2.jpeg", import.meta.url).href,
-  new URL("../assets/foto3.jpeg", import.meta.url).href,
-  new URL("../assets/foto4.jpeg", import.meta.url).href,
+  "https://res.cloudinary.com/de9s60ule/image/upload/v1760924951/foto1_jooorb.jpg",
+  "https://res.cloudinary.com/de9s60ule/image/upload/v1760924951/foto2_l5m0pv.jpg",
+  "https://res.cloudinary.com/de9s60ule/image/upload/v1760924951/foto3_woqcek.jpg",
+  "https://res.cloudinary.com/de9s60ule/image/upload/v1760924951/foto4_khkoy2.jpg",
 ];
 
 const currentIndex = ref(0);

@@ -11,7 +11,7 @@ import Carousel from "./Carousel.vue";
   </h1>
   <p class="mb-6 text-shadow-md">
     Peças com estampas exclusivas que combinam sofisticação e conforto. Realce
-    sua beleza com produtos que foram feitas para você brilhar!
+    sua beleza com produtos que foram feitos para você brilhar!
   </p>
   <button
     class="btn btn btn-secondary w-35 h-13"
@@ -19,7 +19,4 @@ import Carousel from "./Carousel.vue";
   >
     Ver coleção
   </button>
-  <!-- <div class="flex justify-center items-center py-5">
-      <img src="../assets/foto2.jpeg" class="size-75 rounded-4xl" />
-    </div> -->
 </template>
