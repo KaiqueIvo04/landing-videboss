@@ -61,13 +61,13 @@
 
       <div class="divider mb-10"></div>
 
-      <div class="flex h-max justify-center mb-10">
+      <div class="flex h-max justify-center my-5">
         <Benefits />
       </div>
 
       <div class="divider mb-10"></div>
 
-      <div class="flex flex-col items-center justify-center mb-10">
+      <div class="flex flex-col items-center justify-center my-5">
         <Collection />
       </div>
 
@@ -82,7 +82,7 @@
       <div class="divider mb-10"></div>
 
       <div
-        class="flex flex-col justify-center items-center text-center h-max my-5 bg-gradient-to-br"
+        class="flex flex-col justify-center items-center text-center h-max my-5"
       >
         <Contact />
       </div>

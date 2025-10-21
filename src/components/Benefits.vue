@@ -1,6 +1,6 @@
 <template>
   <div class="grid lg:grid-cols-2 grid-cols-1 gap-6 h-full w-3/4">
-    <div class="card bg-primary h-50">
+    <div class="card bg-primary">
       <div class="card-body">
         <h1 class="text-center text-5xl mb-3">🛍️</h1>
         <h2 class="text-center text-xl font-bold">Somos fabricantes</h2>
@@ -11,7 +11,7 @@
       </div>
     </div>
 
-    <div class="card bg-primary h-50">
+    <div class="card bg-primary">
       <div class="card-body">
         <h1 class="text-center text-5xl mb-3">💳</h1>
         <h2 class="text-center text-xl font-bold">Parcelamento</h2>
@@ -22,7 +22,7 @@
       </div>
     </div>
 
-    <div class="card bg-primary h-50">
+    <div class="card bg-primary">
       <div class="card-body">
         <h1 class="text-center text-5xl mb-3">🚛</h1>
         <h2 class="text-center text-xl font-bold">Entregas para todo o País</h2>
@@ -35,7 +35,7 @@
       </div>
     </div>
 
-    <div class="card bg-primary h-50">
+    <div class="card bg-primary">
       <div class="card-body">
         <h1 class="text-center text-5xl mb-3">⭐</h1>
         <h2 class="text-center text-xl font-bold">Qualidade e Preço</h2>
